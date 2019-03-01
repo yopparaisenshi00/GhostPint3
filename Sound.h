@@ -2,7 +2,7 @@
 #define _SOUND_H_
 
 
-static enum {
+enum {
 	BGM_MAIN = 0,	//メインBGM
 	BGM_TITLE,	//タイトルBGM
 

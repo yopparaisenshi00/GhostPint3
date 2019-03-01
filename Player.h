@@ -102,7 +102,7 @@ public:
 	int nodamage_timer;
 	
 	MLT_FOCUS mltfcs;			//マルチフォーカス
-
+	bool shot_flg;
 	float fearstd;				//ゲージ用規格合わせ
 	
 	int jet_eff_timer;			//

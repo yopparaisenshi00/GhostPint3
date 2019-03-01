@@ -285,7 +285,7 @@ void Enemy_Manager::damage_Calculation(Enemy* obj) {
 			obj->z = ((rand() % (PINTO_MAX * 2)) - PINTO_MAX);
 			obj->state = BEGIN;
 		}
-		if (KEY_Get(KEY_L1) == 3) {
+		if (pPlayer->shot_flg) {
 			obj->damage += 9999 /*DAMAGE_MAX + 1*/;
 		}
 	}
@@ -313,7 +313,7 @@ void Enemy_Manager::damage_Calculation(Enemy* obj) {
 		//　　ボタン　
 		obj->damageflg = true;
 
-		if (KEY_Get(KEY_L1) == 3) {
+		if (pPlayer->shot_flg) {
 			obj->damage += 9999 /*DAMAGE_MAX + 1*/;
 		}
 
